@@ -19,6 +19,10 @@ import { HomeComponent } from './home/home.component';
 import { ScanDetailComponent } from './scan-detail/scan-detail.component';
 import { SubDomainComponent } from './sub-domain/sub-domain.component';
 import { FirstComponent } from './first/first.component';
+import { VerifyDomainComponent } from './verify-domain/verify-domain.component';
+import { ReportDetailsComponent } from './report-details/report-details.component';
+import { DomianDetailComponent } from './domian-detail/domian-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +39,11 @@ import { FirstComponent } from './first/first.component';
     HomeComponent,
     ScanDetailComponent,
     SubDomainComponent,
-    FirstComponent
+    FirstComponent,
+    VerifyDomainComponent,
+    ReportDetailsComponent,
+    DomianDetailComponent,
+ 
   ],
   imports: [
     BrowserModule,
