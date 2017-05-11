@@ -1,42 +1,211 @@
-       <nav class="navbar myNav">
-          <div class="container-fluid">
-                 <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                      </button>
-                 <a href="#" class="navbar-brand my_nav_brand">
-                    <img src="./assets/images/^75C6B01CDC78EB9D156FCBD8ECC8F883D52B6A1E248C4BACAF^pimgpsh_fullsize_distr.png" class="img-responsive">
-                 </a>
-             </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav my_nav navbar-nav">
-                  <li><a routerLink="/dashboard">dashboard</a></li>
-                  <li><a href="#">support</a></li>
-                  <li><a href="#">blog</a></li>
-                  <li><a href="#">contact</a></li>
-              </ul>
-              <ul class="nav my_nav_right navbar-nav navbar-right">
-                  <li><a routerLink="/user" class="right_link">Alexandru Ioan Parjoleanu</a></li>
-                  <li><a href="#"><img src="./assets/images/^59692DF62269E8DAB54DA1ADE16F62E71191EED2947B6D0366^pimgpsh_fullsize_distr.png" class="img-responsive logout_img"></a></li>
-              </ul>
-          </div>
-          </div>
-      </nav>
+   <nav class="navbar myNav ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="./assets/images/collaps-ico.png" alt="collaps-ico" class="img-responsive collaps-ico"> <img src="./assets/images/logo.png" alt="logo" class="img-responsive main-logo"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			        </button>
+            </div>
+            <div class="" id="myNavbar">
+                <!-- <ul class="nav navbar-nav">
+			          <li class="active"><a href="#">Home</a></li>
+			          <li><a href="#">Link</a></li>
+			          <li><a href="#">Link</a></li>
+			        </ul> -->
+                <ul class="nav navbar-right main-btn">
+                    <button class="btn btn-custom navbar-btn" data-toggle="modal" data-target="#login"><img src="./assets/images/icon-2.png" style="width: 9px; margin-top: -3px; margin-right: 5px;"> SIGN IN</button>
+                    <button class="btn btn-custom to navbar-btn  btn-join-2" data-toggle="modal" data-target="#register"><img src="./assets/images/icon-no.png" style="width: 9px; margin-top: -3px; margin-right: 5px;"> JOIN FASHBASH</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Trigger the modal with a button -->
 
 
-   <br>
+<!-- Modal LOGIN -->
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="border:none;"> 
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center" style="position:relative;">
+            <img src="./assets/images/logo.png" class="img-responsive center-block" alt="">
+            <div class="sep" style="height: 1px;
+                /* width: 30px; */
+                width: 17%;
+                background:#D9D5D4;
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                top: 45px;"></div>
+            <br>
+            <h4>SIGN IN AND VISIT THE FEED</h4>
+
+            <form class="form-horizontal" action="" style="padding: 35px;padding-bottom:0;">
+                
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="" style="position:relative;">
+                          <img class="envelop_icn" src="../../assets/images/envelop-2.png" alt="">
+                          <input type="text" class="form-control my_frm_cntrl login_mdl_input" placeholder="Username or Email">
+                        </div>
+
+
+                        <br>
+
+                        <a href="#"><img class="img-responsive center-block" src="./assets/images/^5C086866ABD91D94E633398FD59048FC8EC3BBF5C201BC58DD^pimgpsh_fullsize_distr.png" alt=""></a>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="" style="position:relative;">
+                        <img class="lock_icon" src="../../assets/images/lock.png" alt="">
+                          <input type="text" class="form-control my_frm_cntrl login_mdl_input" placeholder="Password">
+                      </div>
+                       <br>
+
+                        <a href="#"><img src="./assets/images/^7CC19A1D4DC0F7B57E1189F82118F3985FAF9558A33F90E513^pimgpsh_fullsize_distr.png" class="img-responsive center-block" alt=""></a>
+                    </div>
+            
+                </div>
+                       <div class="text-center">
+                      <div class="form-group gotofeedBTN" >
+                        <button class="btn btn-custom mdl_btn">GO TO MY FEED</button>
+                      </div>
+                    </div>
+            </form>
+
+        </div>
+
+       
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>-->
+    </div>
+
+  </div>
+</div>
+<!-- Modal LOGIN END -->
 
 
 
 
 
+<!-- MODAL REGISTER -->
+<div id="register" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="border:none;"> 
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center" style="position:relative;">
+            <img src="./assets/images/logo.png" class="img-responsive center-block" alt="">
+            <div class="sep" style="height: 1px;
+                /* width: 30px; */
+                width: 17%;
+                background: #D8D4D3;
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                top: 45px;"></div>
+            <br>
+            <h4>SIGN UP AND DISCOVER THE FEED</h4>
+
+            <form class="form-horizontal" action="" style="padding: 35px;padding-bottom:0;">
+                
+                  <div class="row">
+                      <div class="col-sm-6" >
+                        <div class="" style="position:relative;">
+                          <img src="../../assets/images/user.png" class="user_icn" alt="">
+                          <input type="text" class="form-control my_frm_cntrl" placeholder="FIRST NAME">
+                        </div>
+
+<br>
+
+  <div class="" style="position:relative;">
+    <img src="../../assets/images/envelop-2.png" class="envelop_icn2" alt="">
+                         
+                          <input type="text" class="form-control my_frm_cntrl" placeholder="Your Email(For shoping)">
+                        </div>
+
+                        <br>
+                        <span style="padding-right:20px;position: relative;top:4px;" class="clr_adj">Gender</span>
+                    <div class="radio radio-info radio-inline">
+                        <input type="radio" id="inlineRadio1" value="male" name="radioInline">
+                        <label for="inlineRadio1" class="clr_adj"> Male </label>
+                    </div>
+                    <div class="radio radio-info radio-inline">
+                        <input type="radio" id="inlineRadio2" value="option1" name="radioInline">
+                        <label for="inlineRadio2" class="clr_adj"> Female </label>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="" style="position:relative;">
+                          <img src="../../assets/images/user.png" class="user_icn" alt="">
+                          <input type="text" class="form-control my_frm_cntrl" placeholder="LAST NAME">
+                      </div>
+                       <br>
+
+                           <div class="" style="position:relative;">
+                          <img src="../../assets/images/lock.png" class="lock_icn2" alt="">
+                          <input type="text" class="form-control my_frm_cntrl" placeholder="Password">
+                      </div> <br>
+
+                      <div>
+                        <input type="text" id="brthday" class="form-control brthday" placeholder="Birthday  ______ / ______ / ______">
+                      </div>
+                    </div>
 
 
+                    
+            
+                </div>
+                       <div class="text-center" style="margin-top:35px;">
+                         <br>
+                         <p><span class="checkbox checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label for="inlineCheckbox1" class="clr_adj"> i agree to terms of use and privacy policy </label>
+                    </span> </p>
+                      <div class="form-group gotofeedBTN" >
+                        <button class="btn btn-custom  mdl_btn btn-lg">START NOW</button>
+                      </div>
+                    </div>
 
+                    <div class="row footer_model text-center" style="margin-bottom:25px;">
+                        <p class="clr_adj" style="padding:20px;">Or Sign Up with</p>
 
+                        <div class="col-sm-4">
+                          <a href=""><img src="./assets/images/^8A1DD6628D47090E83D547F135C8059A8606791031E6F4D4E5^pimgpsh_fullsize_distr.png" class="img-responsive center-block" alt=""></a>
+                        </div>
+                      <div class="col-sm-4">
+                          <a href=""><img src="./assets/images/^ACA24FB26912942DA93176AFCC26B05D043797DDC6CC57D7A8^pimgpsh_fullsize_distr.png" class="img-responsive center-block" alt=""></a>
+                        </div>
+                      <div class="col-sm-4">
+                        <a href=""><img src="./assets/images/^2EA0B45DEA236D7DB942A448CB551D874F77717327219980AC^pimgpsh_fullsize_distr.png" class="img-responsive center-block" alt=""></a>
+                      </div>
+                    </div>
+            </form>
 
+        </div>
 
+       
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>-->
+    </div>
 
-
+  </div>
+</div>
+<!-- MODAL REGISTER END -->

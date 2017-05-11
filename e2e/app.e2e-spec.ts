@@ -1,10 +1,10 @@
-import { FendlyPage } from './app.po';
+import { FndlyPage } from './app.po';
 
-describe('fendly App', function() {
-  let page: FendlyPage;
+describe('fndly App', () => {
+  let page: FndlyPage;
 
   beforeEach(() => {
-    page = new FendlyPage();
+    page = new FndlyPage();
   });
 
   it('should display message saying app works', () => {

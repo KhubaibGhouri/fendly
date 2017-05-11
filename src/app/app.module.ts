@@ -4,46 +4,37 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routes } from './app.router';
 
-
 import { AppComponent } from './app.component';
+import { OtherComponent } from './other/other.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserComponent } from './user/user.component';
-import { AddComponent } from './add/add.component';
-import { ConfirmIpComponent } from './confirm-ip/confirm-ip.component';
-import { DomainComponent } from './domain/domain.component';
-import { DomainSettingComponent } from './domain-setting/domain-setting.component';
-import { VerifyOwnershipComponent } from './verify-ownership/verify-ownership.component';
 import { HomeComponent } from './home/home.component';
-import { ScanDetailComponent } from './scan-detail/scan-detail.component';
-import { SubDomainComponent } from './sub-domain/sub-domain.component';
-import { FirstComponent } from './first/first.component';
-import { VerifyDomainComponent } from './verify-domain/verify-domain.component';
-import { ReportDetailsComponent } from './report-details/report-details.component';
-import { DomianDetailComponent } from './domian-detail/domian-detail.component';
-
+import { FeedsComponent } from './feeds/feeds.component';
+import { FollowComponent } from './follow/follow.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { OtherProfileComponent } from './other-profile/other-profile.component';
+import { Header2Component } from './header-2/header-2.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { Header3Component } from './header-3/header-3.component';
+import { Home2Component } from './home-2/home-2.component';
+import { PopupsComponent } from './popups/popups.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    OtherComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent,
-    UserComponent,
-    AddComponent,
-    ConfirmIpComponent,
-    DomainComponent,
-    DomainSettingComponent,
-    VerifyOwnershipComponent,
     HomeComponent,
-    ScanDetailComponent,
-    SubDomainComponent,
-    FirstComponent,
-    VerifyDomainComponent,
-    ReportDetailsComponent,
-    DomianDetailComponent,
- 
+    FeedsComponent,
+    FollowComponent,
+    UserProfileComponent,
+    OtherProfileComponent,
+    Header2Component,
+    ComingSoonComponent,
+    Header3Component,
+    Home2Component,
+    PopupsComponent
   ],
   imports: [
     BrowserModule,
